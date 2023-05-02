@@ -1,0 +1,66 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.headernav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .headerbrand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .headerurl {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .headerli {
+    margin-right: 1rem;
+  }
+  
+  .headerlilast {
+    margin-right: 0;
+  }
+  
+  .headera {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .headera:hover,
+  .headera:focus {
+    color: #0070f3;
+  }
+
+  @media (max-width: 768px) {
+    .headernav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .headerbrand {
+      margin-bottom: 1rem;
+    }
+  
+    .headerurl {
+      margin-top: 1rem;
+      flex-direction: column;
+    }
+  
+    .headerli {
+      margin-right: 0;
+      margin-bottom: 0.5rem;
+    }
+  }

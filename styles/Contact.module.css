@@ -1,0 +1,45 @@
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: #f2f2f2;
+  }
+  
+  .contacth1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contactp {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .contactrow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .contacta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: #0d1b2a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .contacta:hover {
+    background-color: #1a202c;
+  }

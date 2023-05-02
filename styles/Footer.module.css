@@ -1,0 +1,108 @@
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Footer specific styles */
+.footerdiv {
+  background-color: #fafafa;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footertext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.footersvg {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  color: #0070f3;
+  stroke: #0070f3;
+}
+
+.footerrow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+}
+
+.footerh2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.footerh5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.footerp {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.footerlinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footera {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #0070f3;
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.footera:hover,
+.footera:focus {
+  color: #0070f3;
+}
+
+@media (max-width: 768px) {
+  .footerdiv {
+    padding: 2rem 1rem;
+  }
+
+  .footerh2 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .footerh5 {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .footerp {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footerlinks {
+    flex-direction: column;
+  }
+
+  .footera {
+    font-size: 0.75rem;
+    margin: 0.25rem;
+  }
+}
