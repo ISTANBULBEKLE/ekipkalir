@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const HomePage =()=> {
+const HomePage: React.FC =(): JSX.Element=> {
   return (
     <>
       <Head>
@@ -18,7 +18,7 @@ const HomePage =()=> {
         <p className={styles.homep}>
           This is my personal portfolio page. Having a system engineer background,
           I am coming from the jungle of computer nerds compared to computer science coders.
-          I love to learn new things and improve my skills..
+          I love to learn new things and improve my skills.
         </p>
         <p className=""><small className={styles.homesmall}>Last updated 3 mins ago</small></p>
       </div>

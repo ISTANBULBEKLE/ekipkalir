@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styles from '@/styles/Contact.module.css'
 
-const ContactPage = () => {
+const ContactPage: React.FC = (): JSX.Element => {
   return (
     <div className={styles.contactcontainer}>
         <h1 className={styles.contacth1}>Feel free to contact me !</h1>

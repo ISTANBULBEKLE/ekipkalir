@@ -1,7 +1,10 @@
 import React from 'react'
 import styles from '@/styles/About.module.css'
 import Image from 'next/image';
-const AboutPage = () => {
+
+
+
+const AboutPage:React.FC = (): JSX.Element => {
   return (
     <div className={styles.aboutdiv}>
         <Image
