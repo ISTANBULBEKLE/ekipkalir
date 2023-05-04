@@ -5,7 +5,9 @@
     align-items: center;
     height: 100vh;
     padding: 0 2rem;
-    background-color: #f2f2f2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
   
   .contacth1 {
@@ -30,8 +32,8 @@
   .contacta {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    background-color: #0d1b2a;
+    border-radius: 1rem;
+    background-color: #90b6de;
     color: #fff;
     font-size: 1rem;
     font-weight: bold;

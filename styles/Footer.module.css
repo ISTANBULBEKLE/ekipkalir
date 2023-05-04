@@ -67,14 +67,14 @@
 .footera {
   font-size: 0.875rem;
   font-weight: 400;
-  color: #0070f3;
+  color: #232e3a;
   margin: 0.5rem;
   text-decoration: none;
 }
 
 .footera:hover,
 .footera:focus {
-  color: #0070f3;
+  color: #0676f5;
 }
 
 @media (max-width: 768px) {
