@@ -10,7 +10,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <Image
             src="/images/marcus-app.webp"
             width={300}
-            height={300}
+            height={500}
             alt="marcus-app"
           />
         </div>
@@ -50,7 +50,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           <Image
             src="/images/future-step.webp"
             width={300}
-            height={300}
+            height={500}
             alt="princes-trust"
           />
         </div>
@@ -103,9 +103,9 @@ const ProjectsPage: React.FC = (): JSX.Element => {
         <div className={styles.projectCard}>
           <div className={styles.projectCardImage}>
             <Image
-              src="/images/ekip-kalir.png"
+              src="/images/operation-planner.png"
               width={300}
-              height={300}
+              height={500}
               alt="princes-trust"
             />
           </div>
