@@ -15,7 +15,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
           />
         </div>
         <div className={styles.projectCardText}>
-          <h5 className={styles.projectCardHeading}>iOS Mobile Developer</h5>
+          <h5 className={styles.projectCardHeading}>iOS Mobile Engineer</h5>
           <p className={styles.projectCardParagraph}>
             Joined Goldman Sachs Marcus App from the discovery phase, as part of
             the Team recommends full stack microservice architecture solutions.
@@ -76,7 +76,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
             <li className={styles.projectCardListItem}>
               <span className={styles.projectCardListItemBullet}>.</span>
               As a member of the Dev Team, worked on and released the Future
-              Steps Mobile App (Prince’s Trust), which is a cross-platform React
+              Steps Mobile App (Prince&apos;s Trust), which is a cross-platform React
               Native mobile app.
             </li>
             <li className={styles.projectCardListItem}>
@@ -91,7 +91,7 @@ const ProjectsPage: React.FC = (): JSX.Element => {
             </li>
             <li className={styles.projectCardListItem}>
               <span className={styles.projectCardListItemBullet}>.</span>
-              Experienced in ‘Software Development Methods’, Agile, Kanban and Scrum.
+              Experienced in Software Development Methods, Agile, Kanban and Scrum.
             </li>
           </ul>
           <p className={styles.projectCardDate}>

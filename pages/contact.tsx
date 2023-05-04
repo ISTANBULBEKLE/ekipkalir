@@ -8,7 +8,7 @@ const ContactPage: React.FC = (): JSX.Element => {
     <div className={styles.contactcontainer}>
         <h1 className={styles.contacth1}>Feel free to contact me !</h1>
         <p className={styles.contactp}> Technology continues to evolve and new challenges arise, but there will always be opportunities
-            to innovate and create new solutions that can make a positive impact on people's lives. There might be your idea that can help people. 
+            to innovate and create new solutions that can make a positive impact on people&apos;s lives. There might be your idea that can help people. 
             The beauty of web development and software design lies in the ability to create something that is both functional and beautiful, 
             and that can make a real difference in the world. SO WE ARE THERE FOR YOU.</p>
         <div className={styles.contactrow}>
