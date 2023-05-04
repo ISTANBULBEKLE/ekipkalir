@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 /* About page specific styles */
-.aboutdiv {
+
+.aboutsection{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,8 +13,9 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
-
 .aboutimg{
     width: 150px;
     height: 150px;
@@ -42,9 +44,26 @@
   margin-bottom: 1rem;
   line-height: 1.5;
 }
+.aboutul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
 
+.aboutli{
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #ded5ed;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0.3rem;
+  padding: 0.5rem;
+}
 @media (max-width: 600px) {
-  .aboutcontainer {
+  .aboutsection {
     padding: 20px;
   }
 
