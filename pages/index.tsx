@@ -1,10 +1,18 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import homeStyles from '@/styles/Home.module.css';
+import { useTheme } from '../components/ThemeContext';
+import Switch from '../components/Switch';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
-const HomePage: React.FC =(): JSX.Element=> {
+const HomePage: React.FC = (): JSX.Element => {
+  const { theme, toggleTheme } = useTheme();
+
+  const handleToggle = () => {
+    toggleTheme && toggleTheme();
+  };
+
   return (
     <>
       <Head>
@@ -13,17 +21,22 @@ const HomePage: React.FC =(): JSX.Element=> {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.homepage}>
-        <h5 className={styles.home5}>Welcome to my personal page.</h5>
-        <p className={styles.homep}>
-          This is my personal portfolio page. Having a system engineer background,
-          I am coming from the jungle of computer nerds compared to computer science coders.
-          I love to learn new things and improve my skills.
+      <div
+        className={homeStyles.div}
+        style={{ backgroundColor: theme ? 'light' : 'dark' }}
+      >
+        <h5 className={homeStyles.h5}>Welcome to my personal page.</h5>
+        <p className={homeStyles.p}>
+          This is my personal portfolio page. Having a system engineer background, I am coming from
+          the jungle of computer nerds compared to computer science coders. I love to learn new
+          things and improve my skills.
         </p>
-        <p className=""><small className={styles.homesmall}>Last updated 3 mins ago</small></p>
+        <p className="">
+          <small className={homeStyles.small}>Last updated 3 mins ago</small>
+        </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

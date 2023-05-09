@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/styles/About.module.css'
+import aboutStyles from '@/styles/About.module.css'
 import Image from 'next/image';
 
 
@@ -7,17 +7,17 @@ import Image from 'next/image';
 const AboutPage:React.FC = (): JSX.Element => {
   return (
     <>
-      <section className={styles.aboutsection}>
+      <section className={aboutStyles.section}>
         <Image
               src="/images/ekip-kalir.png"
               width={300}
               height={300}
               alt="ekip kalir profile picture"
-              className={styles.aboutimg}
+              className={aboutStyles.img}
         />
-        <h1 className={styles.abouth1}>Ekip Kalir</h1>
-        <h2 className={styles.abouth2}>Full Stack Engineer</h2>
-        <p className={styles.aboutp}> 
+        <h1 className={aboutStyles.h1}>Ekip Kalir</h1>
+        <h2 className={aboutStyles.h2}>Full Stack Engineer</h2>
+        <p className={aboutStyles.p}> 
           Ekip is a highly skilled Full Stack Engineer. 
           In the past few years he has been involved in many aspects
           of modern software development from mobile app development, 
@@ -28,29 +28,29 @@ const AboutPage:React.FC = (): JSX.Element => {
           business analysis, team building and team management. 
         </p>
       </section>
-      <section className={styles.aboutsection}>
-        <h2 className={styles.abouth2}>Tech Stack</h2>
-        <p className={styles.aboutp}>
+      <section className={aboutStyles.section}>
+        <h2 className={aboutStyles.h2}>Tech Stack</h2>
+        <p className={aboutStyles.p}>
           Ekip has a proven track
           record of analytical and problem-solving skills with robust communication
           and collaborative working. He is highly skilled in React/React Native, 
           Swift/SwiftUI with frontend and backend capabilities and Scala/Scala Play 
           framework. </p>
-        <ul className={styles.aboutul}>
-          <li className={styles.aboutli}>JavaScript</li>
-          <li className={styles.aboutli}>CSS-3</li>
-          <li className={styles.aboutli}>HTML-5</li>
-          <li className={styles.aboutli}>React.js</li>
-          <li className={styles.aboutli}>Next.js</li>
-          <li className={styles.aboutli}>Swift</li>
-          <li className={styles.aboutli}>SwiftUI</li>
-          <li className={styles.aboutli}>Scala</li>
-          <li className={styles.aboutli}>Scala/Play</li>
-          <li className={styles.aboutli}>Python</li>
-          <li className={styles.aboutli}>AWS</li>
-          <li className={styles.aboutli}>SQL</li>
-          <li className={styles.aboutli}>GraphQL</li>
-          <li className={styles.aboutli}>MongoDB</li>
+        <ul className={aboutStyles.ul}>
+          <li className={aboutStyles.li}>JavaScript</li>
+          <li className={aboutStyles.li}>CSS-3</li>
+          <li className={aboutStyles.li}>HTML-5</li>
+          <li className={aboutStyles.li}>React.js</li>
+          <li className={aboutStyles.li}>Next.js</li>
+          <li className={aboutStyles.li}>Swift</li>
+          <li className={aboutStyles.li}>SwiftUI</li>
+          <li className={aboutStyles.li}>Scala</li>
+          <li className={aboutStyles.li}>Scala/Play</li>
+          <li className={aboutStyles.li}>Python</li>
+          <li className={aboutStyles.li}>AWS</li>
+          <li className={aboutStyles.li}>SQL</li>
+          <li className={aboutStyles.li}>GraphQL</li>
+          <li className={aboutStyles.li}>MongoDB</li>
         </ul>
       </section>
     </>

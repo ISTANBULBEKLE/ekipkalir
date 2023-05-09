@@ -3,7 +3,7 @@
 
 /* About page specific styles */
 
-.aboutsection{
+.section{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   margin: 2rem 0;
   padding: 0 1rem;
 }
-.aboutimg{
+.img{
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -24,27 +24,27 @@
     margin-bottom: 1rem;
 }
 
-.abouth1 {
+.h1 {
   font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
-.abouth2 {
+.h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-.aboutp {
+.p {
   font-size: 1rem;
   font-weight: 400;
   color: #333;
   margin-bottom: 1rem;
   line-height: 1.5;
 }
-.aboutul{
+.ul{
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -52,7 +52,7 @@
   margin: 0;
 }
 
-.aboutli{
+.li{
   list-style: none;
   font-size: 1rem;
   font-weight: 400;
@@ -63,21 +63,21 @@
   padding: 0.5rem;
 }
 @media (max-width: 600px) {
-  .aboutsection {
+  .section {
     padding: 20px;
   }
 
-  .abouth1 {
+  .h1 {
     font-size: 36px;
     margin-bottom: 10px;
   }
 
-  .abouth2 {
+  .h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
 
-  .aboutp {
+  .p {
     font-size: 16px;
     margin-bottom: 10px;
   }
