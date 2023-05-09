@@ -70,7 +70,7 @@ const handleSubmit = ()=>{
           </div>
         </form>
       </section>
-
+{/* 
       <section className={styles.contactsection}>
         
           <ul >
@@ -84,7 +84,7 @@ const handleSubmit = ()=>{
             </>
           ))}
             </ul>
-      </section>
+      </section> */}
 
       <section className={styles.contactsection}>
         <h2>Follow me !</h2>

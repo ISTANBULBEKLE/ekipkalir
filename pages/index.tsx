@@ -1,18 +1,11 @@
 import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import homeStyles from '@/styles/Home.module.css';
-import { useTheme } from '../components/ThemeContext';
-import Switch from '../components/Switch';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
 const HomePage: React.FC = (): JSX.Element => {
-  const { theme, toggleTheme } = useTheme();
-
-  const handleToggle = () => {
-    toggleTheme && toggleTheme();
-  };
-
   return (
     <>
       <Head>
@@ -23,7 +16,6 @@ const HomePage: React.FC = (): JSX.Element => {
       </Head>
       <div
         className={homeStyles.div}
-        style={{ backgroundColor: theme ? 'light' : 'dark' }}
       >
         <h5 className={homeStyles.h5}>Welcome to my personal page.</h5>
         <p className={homeStyles.p}>

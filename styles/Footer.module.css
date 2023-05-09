@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 /* Footer specific styles */
-.footerdiv {
+.div {
   background-color: #fafafa;
   padding: 1rem;
   display: flex;
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.footertext {
+.text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +20,7 @@
   background-color: #fafafa;
 }
 
-.footersvg {
+.svg {
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
@@ -28,7 +28,7 @@
   stroke: #0070f3;
 }
 
-.footerrow {
+.row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,35 +36,35 @@
   background-color: #fafafa;
 }
 
-.footerh2 {
+.h2 {
   font-size: 1.2rem;
   font-weight: 400;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-.footerh5 {
+.h5 {
   font-size: 1rem;
   font-weight: 600;
   color: #333;
   margin-bottom: 0.5rem;
 }
 
-.footerp {
+.p {
   font-size: 0.875rem;
   font-weight: 400;
   color: #333;
   margin-bottom: 1rem;
 }
 
-.footerlinks {
+.links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.footera {
+.a {
   font-size: 0.875rem;
   font-weight: 400;
   color: #232e3a;
@@ -72,36 +72,36 @@
   text-decoration: none;
 }
 
-.footera:hover,
-.footera:focus {
+.a:hover,
+.a:focus {
   color: #0676f5;
 }
 
 @media (max-width: 768px) {
-  .footerdiv {
+  .div {
     padding: 2rem 1rem;
   }
 
-  .footerh2 {
+  .h2 {
     font-size: 1rem;
     margin-bottom: 0.25rem;
   }
 
-  .footerh5 {
+  .h5 {
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
   }
 
-  .footerp {
+  .p {
     font-size: 0.75rem;
     margin-bottom: 0.5rem;
   }
 
-  .footerlinks {
+  .links {
     flex-direction: column;
   }
 
-  .footera {
+  .a {
     font-size: 0.75rem;
     margin: 0.25rem;
   }

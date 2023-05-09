@@ -5,7 +5,7 @@ import headerStyles from '@/styles/Header.module.css';
 import Switch from '@/components/Switch';
 
 
-const Header = ({}): JSX.Element => {
+const Header = ({style={}}): JSX.Element => {
 
   return (
     <nav className={headerStyles.nav}>
