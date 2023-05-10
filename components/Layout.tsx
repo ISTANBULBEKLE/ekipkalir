@@ -5,17 +5,12 @@ import Footer from '@/components/Footer';
 import Meta from '@/components/Meta';
 import { useTheme } from '@/components/ThemeContext';
 
-interface SwitchProps {
+interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Switch: React.FC<SwitchProps> = ({ children }): JSX.Element => {
-  const { theme, toggleTheme, toggleTextColor } = useTheme();
-
-  const handleToggle = () => {
-    toggleTheme && toggleTheme();
-    toggleTextColor && toggleTextColor();
-  };
+const Layout: React.FC<LayoutProps> = ({ children }): JSX.Element => {
+  const { theme } = useTheme();
 
   return (
     <>
@@ -33,4 +28,4 @@ const Switch: React.FC<SwitchProps> = ({ children }): JSX.Element => {
   );
 };
 
-export default Switch;
+export default Layout;

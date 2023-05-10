@@ -9,13 +9,11 @@ interface Theme {
 interface ThemeContextType {
   theme: Theme;
   toggleTheme: () => void;
-  toggleTextColor: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
   theme: { name: 'light', backgroundColor: '#f5f5f5', textColor: '#333' },
-  toggleTheme: () => {},
-  toggleTextColor: () => {},
+  toggleTheme: () => { },
 });
 
 export const useTheme = () => useContext(ThemeContext);
@@ -28,16 +26,10 @@ const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({ children })
   const [theme, setTheme] = useState<Theme>({ name: 'light', backgroundColor: '#f5f5f5', textColor: '#333' });
 
   const toggleTheme = () => {
-    const newTheme = theme.name === 'light'
+    const newTheme: Theme = theme.name === 'light'
       ? { name: 'dark', backgroundColor: '#333', textColor: '#f5f5f5' }
       : { name: 'light', backgroundColor: '#f5f5f5', textColor: '#333' };
-    setTheme(prevTheme => ({ ...prevTheme, ...newTheme, name: newTheme.name as Theme['name'] }));
-  };
-
-  const toggleTextColor = () => {
-    const newTextColor = theme.textColor === '#333' ? '#f5f5f5' : '#333';
-    const newTheme = { ...theme, textColor: newTextColor };
-    setTheme(newTheme);
+    setTheme(prevTheme => ({ ...prevTheme, ...newTheme }));
   };
 
   useEffect(() => {
@@ -53,10 +45,12 @@ const ThemeContextProvider: React.FC<ThemeContextProviderProps> = ({ children })
 
   useEffect(() => {
     localStorage.setItem('theme', JSON.stringify(theme));
+    document.documentElement.style.setProperty('--background-color', theme.backgroundColor);
+    document.documentElement.style.setProperty('--text-color', theme.textColor);
   }, [theme]);
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, toggleTextColor }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </ThemeContext.Provider>
   );

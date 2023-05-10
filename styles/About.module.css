@@ -10,9 +10,10 @@
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background-color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
   margin: 2rem 0;
   padding: 0 1rem;
 }
@@ -34,14 +35,14 @@
 .h2 {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 0.5rem;
 }
 
 .p {
   font-size: 1rem;
   font-weight: 400;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 1rem;
   line-height: 1.5;
 }
@@ -57,10 +58,11 @@
   list-style: none;
   font-size: 1rem;
   font-weight: 400;
-  background-color: #ded5ed;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 0.3rem;
+  box-shadow: 0 8px 10px rgba(21, 21, 21, 0.1);
+  margin: 0.5rem;
   padding: 0.5rem;
 }
 @media (max-width: 600px) {

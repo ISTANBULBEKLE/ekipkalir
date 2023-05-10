@@ -6,17 +6,16 @@ interface SwitchProps {
   style?: React.CSSProperties;
 }
 
-const Switch: React.FC<SwitchProps> = ({style}): JSX.Element => {
-  const { theme, toggleTheme, toggleTextColor } = useTheme();
+const Switch: React.FC<SwitchProps> = ({ style }): JSX.Element => {
+  const { theme, toggleTheme } = useTheme();
 
   const handleToggle = () => {
     toggleTheme && toggleTheme();
-    toggleTextColor && toggleTextColor();
   };
 
   return (
     <label className={switchStyles.switch} style={style}>
-      <input type="checkbox" checked={theme.name === 'dark'} onChange={handleToggle} />
+      <input type="checkbox" checked={theme.name === 'dark'} onClick={handleToggle} />
       <span className={`${switchStyles.slider} ${switchStyles.round}`}></span>
     </label>
   );
