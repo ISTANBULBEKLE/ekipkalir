@@ -29,3 +29,5 @@ const Meta: FC<MetaProps> = ({ title, keywords, description }): JSX.Element => {
         </Head>
     );
 };
+
+export default Meta;
