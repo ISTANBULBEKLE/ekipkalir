@@ -143,12 +143,12 @@ const ContactPage: React.FC = (): JSX.Element => {
 export default ContactPage;
 
 
-export const getStaticProps = async () => {
-  const res = await fetch(`${server}/api/notes`);
-  const notes = await res.json()
-  return {
-    props: {
-      notes,
-    }
-  }
-}
+// export const getStaticProps = async () => {
+//   const res = await fetch(`${server}/api/notes`);
+//   const notes = await res.json()
+//   return {
+//     props: {
+//       notes,
+//     }
+//   }
+// }
