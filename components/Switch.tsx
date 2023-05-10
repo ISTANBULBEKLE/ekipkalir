@@ -1,13 +1,12 @@
+import React from 'react';
 import { useTheme } from './ThemeContext';
 import switchStyles from '@/styles/Switch.module.css';
 
 interface SwitchProps {
   style?: React.CSSProperties;
-  defaultChecked?: boolean;
-  onChange?: () => void;
 }
 
-const Switch: React.FC<SwitchProps> = (): JSX.Element => {
+const Switch: React.FC<SwitchProps> = ({style}): JSX.Element => {
   const { theme, toggleTheme, toggleTextColor } = useTheme();
 
   const handleToggle = () => {
@@ -16,8 +15,8 @@ const Switch: React.FC<SwitchProps> = (): JSX.Element => {
   };
 
   return (
-    <label className={switchStyles.switch}>
-      <input type="checkbox" checked={theme === 'dark'} onChange={handleToggle} />
+    <label className={switchStyles.switch} style={style}>
+      <input type="checkbox" checked={theme.name === 'dark'} onChange={handleToggle} />
       <span className={`${switchStyles.slider} ${switchStyles.round}`}></span>
     </label>
   );

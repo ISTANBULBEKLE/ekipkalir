@@ -5,8 +5,17 @@ import Footer from '@/components/Footer';
 import Meta from '@/components/Meta';
 import { useTheme } from '@/components/ThemeContext';
 
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const { theme } = useTheme();
+interface SwitchProps {
+  children: React.ReactNode;
+}
+
+const Switch: React.FC<SwitchProps> = ({ children }): JSX.Element => {
+  const { theme, toggleTheme, toggleTextColor } = useTheme();
+
+  const handleToggle = () => {
+    toggleTheme && toggleTheme();
+    toggleTextColor && toggleTextColor();
+  };
 
   return (
     <>
@@ -15,13 +24,13 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         keywords="Software engineer, JavaScript, React / React Native, Swift, SwiftUI, Scala / Scala Play"
         description="This is the personal portfolio page of software engineer Ekip Kalir"
       />
-      <Header style={{ backgroundColor: theme.backgroundColor, color: theme.textColor }} />
-      <div className={layoutStyles.div} style={{ backgroundColor: theme.backgroundColor, color: theme.textColor }}>
+      <Header style={{ backgroundColor: theme.backgroundColor, color: `var(--text-color)` }} />
+      <div className={layoutStyles.div} style={{ backgroundColor: theme.backgroundColor, color: `var(--text-color)` }}>
         <main className={layoutStyles.main}>{children}</main>
       </div>
-      <Footer style={{ backgroundColor: theme.backgroundColor, color: theme.textColor }} />
+      <Footer style={{ backgroundColor: theme.backgroundColor, color: `var(--text-color)` }} />
     </>
   );
 };
 
-export default Layout;
+export default Switch;
