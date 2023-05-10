@@ -6,7 +6,7 @@ import { SocialIcon } from 'react-social-icons';
 
 
 
-const ContactPage: React.FC = ({ notes }): JSX.Element => {
+const ContactPage: React.FC = (): JSX.Element => {
   const [name, setName] = useState('')
   const [surName, setSurname] = useState('')
   const [email, setEmail] = useState('')
